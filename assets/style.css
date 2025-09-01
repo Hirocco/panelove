@@ -1,0 +1,130 @@
+/* Hover effect on nav links */
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  font-weight: 600;
+  text-decoration: none;
+}
+/* Początkowy stan – przezroczysty navbar */
+.navbar-transparent {
+  background-color: transparent;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Po scrollu */
+.navbar-scrolled {
+  background-color: white !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .navbar-toggler {
+  color: #000 !important;
+}
+
+.navbar .nav-link {
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  transform: scale(1.05);
+  font-weight: 600;
+}
+.hero-section {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .bg-section img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+}
+
+.overlay {
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.email-input {
+  width: 200px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2); /* półprzezroczyste białe tło */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* jasna ramka */
+  color: white;
+  border-radius: 30px; /* mocno zaokrąglone */
+  padding: 0 15px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.email-input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}
+#services h1 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#services .bi {
+  transition: transform 0.3s ease;
+}
+
+#services .bi:hover {
+  transform: scale(1.1);
+}
+
+#price-calculator .card {
+  background-color: #ffffffcc; /* lekko przezroczyste tło */
+  border-radius: 20px;
+}
+
+#priceOutput {
+  color: #007bff;
+  transition: all 0.3s ease;
+}
+.shadow-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.bg-light-blue {
+  background-color: #e9f3fc; /* delikatny błękit */
+}
+
+.quote-divider {
+  background-color: #78afdf; /* delikatny niebieski */
+  height: 150px;
+  max-width: 100%;
+}
+.btn--rounded {
+  border-radius: 50px;
+  padding: 10px 25px;
+}
+
+img.shadow {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}

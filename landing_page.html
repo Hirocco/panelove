@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panelove</title>
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS LIBRARIES -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href="assets/style.css" rel="stylesheet" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top py-3 navbar-transparent shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#">Panelove</a>
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">O nas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#services">Usługi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#projects"
+                >Wykonane projekty</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#price-calculator">Cennik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#opinions">Opinie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <section
+      id="hero"
+      class="hero-section position-relative d-flex align-items-center justify-content-center text-center text-white"
+    >
+      <!-- Ciemny overlay + obraz -->
+      <div class="bg-section position-absolute w-100 h-100">
+        <img
+          src="/assets/background.jpg"
+          alt="Background"
+          class="w-100 h-100 object-fit-cover"
+        />
+        <div
+          class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
+        ></div>
+      </div>
+
+      <!-- Treść -->
+      <div class="container position-relative z-1">
+        <div class="hero-content">
+          <h1 class="display-4 fw-bold text-shadow">
+            Budujemy/remontujemy ogrodzenia panelowe.
+          </h1>
+          <p class="lead mb-4 text-shadow">
+            Czego nie potrzebujesz, jesteśmy pewni, że<br />
+            dowieziemy.
+          </p>
+          <!-- <form
+            class="d-flex flex-column flex-md-row justify-content-center gap-2"
+          >
+            <input
+              type="email"
+              class="form-control email-input"
+              placeholder="Wpisz tutaj swój e-mail"
+            />
+            <button type="submit" class="btn btn-primary rounded-pill">
+              Podaj email, a skontaktujemy się z Tobą!
+            </button>
+          </form> -->
+
+          <a href="#contact" class="btn btn-primary rounded-pill"
+            >Skontaktuj się z nami!</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. USŁUGI -->
+    <section id="services" class="py-5 bg-light text-center">
+      <div class="container">
+        <h1 class="display-5 fw-bold mb-3">Nasze usługi</h1>
+        <p class="text-muted mb-5">
+          Specjalizujemy się w kompleksowych pracach związanych z ogrodzeniami
+          panelowymi i nie tylko.
+        </p>
+
+        <div class="row g-4">
+          <!-- Usługa 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-tools display-4 text-primary mb-3"></i>
+              <h5 class="fw-bold mb-2">Remont ogrodzeń</h5>
+              <p class="text-muted">
+                Naprawiamy, wzmacniamy i modernizujemy ogrodzenia każdej
+                wielkości.
+              </p>
+            </div>
+          </div>
+
+          <!-- Usługa 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-bricks display-4 text-primary mb-3"></i>
+              <h5 class="fw-bold mb-2">Budowa nowych ogrodzeń</h5>
+              <p class="text-muted">
+                Projektujemy i wykonujemy nowe ogrodzenia od podstaw, z pełną
+                precyzją.
+              </p>
+            </div>
+          </div>
+
+          <!-- Usługa 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-house-gear display-4 text-primary mb-3"></i>
+              <h5 class="fw-bold mb-2">Szybka, jasna wycena.</h5>
+              <p class="text-muted">
+                Wyceniamy na podstawie metra bieżącego, każdy koszt i
+                zaptorzebowanie ogłaszamy z wyprzedzeniem.
+              </p>
+            </div>
+          </div>
+
+          <!-- Usługa 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-palette display-4 text-primary mb-3"></i>
+              <h5 class="fw-bold mb-2">Malowanie i zabezpieczenia</h5>
+              <p class="text-muted">
+                Oferujemy malowanie oraz ochronę ogrodzeń przed korozją i
+                warunkami atmosferycznymi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section
+      class="quote-divider d-flex align-items-center justify-content-center text-center shadow-box"
+    >
+      <div class="container">
+        <p class="lead fw-semibold mb-0 ">
+          „Solidność to nie wybór – to fundament każdego ogrodzenia.”
+        </p>
+      </div>
+    </section> -->
+
+    <!-- 5. PROJEKTY / PORTFOLIO / FEATURED -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-4">Nasze realizacje</h2>
+        <div
+          id="projectsCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <div class="project-box position-relative">
+                    <img
+                      src="/assets/projekt1.jpg"
+                      class="img-fluid rounded"
+                      alt="Projekt 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project-box position-relative">
+                    <img
+                      src="/assets/projekt2.jpg"
+                      class="img-fluid rounded"
+                      alt="Projekt 2"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project-box position-relative">
+                    <img
+                      src="/assets/projekt3.jpg"
+                      class="img-fluid rounded"
+                      alt="Projekt 3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <div class="project-box position-relative">
+                    <img
+                      src="/assets/projekt4.jpg"
+                      class="img-fluid rounded"
+                      alt="Projekt 4"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project-box position-relative">
+                    <img
+                      src="/assets/projekt5.jpg"
+                      class="img-fluid rounded"
+                      alt="Projekt 5"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project-box position-relative">
+                    <img
+                      src="/assets/projekt6.jpg"
+                      class="img-fluid rounded"
+                      alt="Projekt 6"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KONTROLKI -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-dark rounded-circle"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Poprzedni</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-dark rounded-circle"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Następny</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. KALKULATOR CEN -->
+    <section id="price-calculator" class="py-5 bg-light text-center">
+      <div class="container">
+        <div class="shadow-box">
+          <h2 class="display-5 fw-bold mb-4">Kalkulator cen</h2>
+          <p class="text-muted mb-5">
+            Sprawdź orientacyjny koszt ogrodzenia panelowego – 1 metr bieżący =
+            55 zł <br />
+            Cena może się różnić o dodatkowe opłaty.
+          </p>
+
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="card shadow-sm p-4">
+                <form id="priceForm">
+                  <div class="mb-3">
+                    <label for="lengthInput" class="form-label"
+                      >Podaj długość ogrodzenia (w metrach bieżących):</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control form-control-lg rounded-pill text-center"
+                      id="lengthInput"
+                      placeholder="Np. 30"
+                      min="0"
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <h5>Szacowana cena:</h5>
+                    <p id="priceOutput" class="fs-4 fw-bold">0 zł</p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opinie -->
+    <section id="opinions" class="py-5 bg-light shadow-box">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Opinie naszych klientów</h2>
+
+        <div class="swiper opinionSwiper">
+          <div class="swiper-wrapper">
+            <!-- Każdy slide = 6 opinii (2x3) -->
+            <div class="swiper-slide">
+              <div class="row g-4">
+                <!-- 6 opinii -->
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>„Błyskawiczna realizacja, ekipa zna się na rzeczy.”</p>
+                      <h6 class="fw-semibold">Mateusz R.</h6>
+                      <p class="text-muted small">Rzeszów</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>
+                        „Zamówienie wykonane przed czasem, ogrodzenie wygląda
+                        świetnie.”
+                      </p>
+                      <h6 class="fw-semibold">Agnieszka L.</h6>
+                      <p class="text-muted small">Krosno</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>
+                        „Świetna robota brukarska, podjazd wygląda jak nowy.”
+                      </p>
+                      <h6 class="fw-semibold">Dawid Z.</h6>
+                      <p class="text-muted small">Przemyśl</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>„Ogrodzenie solidne i stabilne. Cena rozsądna.”</p>
+                      <h6 class="fw-semibold">Julia T.</h6>
+                      <p class="text-muted small">Mielec</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>
+                        „Bardzo dobry kontakt, wszystko dogadane telefonicznie i
+                        zrobione.”
+                      </p>
+                      <h6 class="fw-semibold">Kamil S.</h6>
+                      <p class="text-muted small">Jasło</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>
+                        „Polecam każdemu! Dobre ceny i pełen profesjonalizm.”
+                      </p>
+                      <h6 class="fw-semibold">Elżbieta M.</h6>
+                      <p class="text-muted small">Stalowa Wola</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Drugi SLIDE -->
+            <div class="swiper-slide">
+              <div class="row g-4">
+                <!-- Kolejne 6 opinii -->
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>„Terminowo, fachowo, i bardzo czysto po pracy.”</p>
+                      <h6 class="fw-semibold">Karol D.</h6>
+                      <p class="text-muted small">Dębica</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>„Naprawdę uczciwa firma, wszystko zgodnie z umową.”</p>
+                      <h6 class="fw-semibold">Iwona B.</h6>
+                      <p class="text-muted small">Sanok</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>„Ogrodzenie wytrzymałe, dobrze się prezentuje.”</p>
+                      <h6 class="fw-semibold">Robert K.</h6>
+                      <p class="text-muted small">Leżajsk</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>
+                        „Błyskawiczna reakcja na zapytanie, świetna
+                        komunikacja.”
+                      </p>
+                      <h6 class="fw-semibold">Magda J.</h6>
+                      <p class="text-muted small">Jarosław</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>„Firma godna polecenia. Praca wykonana wzorowo.”</p>
+                      <h6 class="fw-semibold">Tomasz W.</h6>
+                      <p class="text-muted small">Nisko</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                      <p>
+                        „Brukarze z powołania – chodnik wygląda rewelacyjnie.”
+                      </p>
+                      <h6 class="fw-semibold">Barbara F.</h6>
+                      <p class="text-muted small">Ustrzyki Dolne</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O NAS -->
+    <section id="about" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Tekst -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h2 class="mb-4 fw-bold">
+              Ogrodzenia panelowe i usługi brukarskie
+            </h2>
+            <p class="lead text-muted">
+              Jesteśmy firmą z doświadczeniem, która stawia na solidność,
+              estetykę i terminowość. Wykonujemy
+              <strong>ogrodzenia panelowe</strong> oraz świadczymy kompleksowe
+              <strong>usługi brukarskie</strong> — od projektu, przez
+              przygotowanie terenu, aż po finalne wykończenie.
+            </p>
+            <p>
+              Obsługujemy klientów indywidualnych i firmy. Dla nas liczy się
+              jakość, dlatego korzystamy wyłącznie ze sprawdzonych materiałów
+              oraz nowoczesnego sprzętu.
+            </p>
+            <a href="#contact" class="btn btn-primary btn--rounded mt-3"
+              >Skontaktuj się z nami</a
+            >
+          </div>
+
+          <!-- Obrazek lub kolaż -->
+          <div class="col-md-6">
+            <img
+              src="assets/o-nas.jpg"
+              alt="Nasze prace - ogrodzenia i kostka"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FORMULARZ KONTAKTOWY -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="display-5 fw-bold text-center mb-4">
+          Skontaktuj się z nami
+        </h2>
+        <p class="text-muted text-center mb-5">
+          Masz pytanie? Wypełnij formularz lub zadzwoń bezpośrednio.
+        </p>
+
+        <div class="row">
+          <!-- Formularz -->
+          <div class="col-md-7">
+            <form
+              id="contactForm"
+              class="bg-white p-4 rounded shadow-sm shadow-box"
+              method="POST"
+              action="send.php"
+            >
+              <div class="mb-3">
+                <label for="name" class="form-label">Imię</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Twoje imię"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Twój adres e-mail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Wiadomość</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Napisz wiadomość..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary rounded-pill px-4">
+                Wyślij wiadomość
+              </button>
+            </form>
+          </div>
+
+          <!-- Dane kontaktowe -->
+          <div class="col-md-5 mt-4 mt-md-0">
+            <div
+              class="bg-white p-4 rounded shadow-sm h-100 d-flex flex-column justify-content-center"
+            >
+              <h5 class="fw-bold mb-3">
+                <i class="bi bi-envelope-fill me-2 text-primary"></i>E-mail
+              </h5>
+              <p class="mb-4">
+                <a
+                  href="mailto:panelove@gmail.com"
+                  class="text-decoration-none text-dark"
+                  >panelove@gmail.com</a
+                >
+              </p>
+
+              <h5 class="fw-bold mb-3">
+                <i class="bi bi-telephone-fill me-2 text-primary"></i>Telefon
+              </h5>
+              <p>
+                <a
+                  href="tel:+48730696016"
+                  class="text-decoration-none text-dark"
+                  >+48 730 696 016</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-center text-lg-start bg-dark text-white py-4">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <p class="mb-1">
+              &copy; 2025 Panelove. Wszelkie prawa zastrzeżone.
+            </p>
+            <p class="mb-0">Chcesz stronę? Pisz -> kamil.uchwat19@gmail.com</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#hero" class="text-white me-3">Strona główna</a>
+            <a href="#services" class="text-white me-3">Usługi</a>
+            <a href="#contact" class="text-white">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS LIBRARIES -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script>
+      AOS.init();
+
+      //navbar zmiana koloru
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("navbar-scrolled");
+        } else {
+          navbar.classList.remove("navbar-scrolled");
+        }
+      });
+
+      // kalkulator
+      const input = document.getElementById("lengthInput");
+      const output = document.getElementById("priceOutput");
+      const form = document.getElementById("priceForm");
+      const pricePerMeter = 55;
+
+      input.addEventListener("input", function () {
+        const meters = parseFloat(input.value);
+        if (!isNaN(meters) && meters >= 0) {
+          const price = meters * pricePerMeter;
+          output.textContent = `${price.toFixed(2)} zł`;
+        } else {
+          output.textContent = "0 zł";
+        }
+      });
+
+      // Zablokowanie domyślnego przesłania formularza
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+      });
+
+      //formularz wysylanie
+
+      const form_email = document.getElementById("contactForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form_email);
+
+        fetch("send.php", {
+          method: "POST",
+          body: formData,
+        })
+          .then((res) => res.text())
+          .then((data) => {
+            if (data.trim() === "success") {
+              alert("Wiadomość została wysłana. Dziękujemy!");
+              form_email.reset();
+            } else {
+              alert("Coś poszło nie tak. Spróbuj ponownie.");
+            }
+          })
+          .catch(() => {
+            alert("Błąd połączenia. Spróbuj ponownie.");
+          });
+      });
+
+      //opinie swiper
+      const opinionSwiper = new Swiper(".opinionSwiper", {
+        loop: true,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+        },
+        effect: "slide",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: false,
+        navigation: false,
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
